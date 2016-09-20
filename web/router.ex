@@ -18,6 +18,8 @@ defmodule PhBlog.Router do
 
     get "/", IndexController, :index
     #get "/", PageController, :index
+
+    resources "/posts", PostController
   end
 
   # Other scopes may use custom stacks.
